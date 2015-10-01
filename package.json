@@ -1,0 +1,25 @@
+{
+  "name": "inner-text",
+  "version": "1.0.0",
+  "description": "Cross Browser `innerText` function based on innerHTML with replacements.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/intesso/inner-text.git"
+  },
+  "keywords": [
+    "innerText",
+    "contenteditable",
+    "text",
+    "textContent"
+  ],
+  "author": "Andi Neck",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/intesso/inner-text/issues"
+  },
+  "homepage": "https://github.com/intesso/inner-text#readme"
+}
