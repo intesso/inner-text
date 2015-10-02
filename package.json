@@ -4,7 +4,7 @@
   "description": "Cross Browser `innerText` function based on innerHTML with replacements.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "browserify test.js | testling"
   },
   "repository": {
     "type": "git",
@@ -21,5 +21,10 @@
   "bugs": {
     "url": "https://github.com/intesso/inner-text/issues"
   },
-  "homepage": "https://github.com/intesso/inner-text#readme"
+  "homepage": "https://github.com/intesso/inner-text#readme",
+  "devDependencies": {
+    "browserify": "^11.2.0",
+    "tape": "^4.2.0",
+    "testling": "^1.7.1"
+  }
 }

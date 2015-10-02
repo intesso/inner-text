@@ -14,6 +14,11 @@ There is different ways to implement the innerText functionality.
 
 Otherwise this function can be helpful.
 
+# install
+```sh
+npm install inner-text
+```
+
 # usage
 
 all innerText does is get the `el.innerText` from the `element`, even when the browser does not support it.
@@ -21,16 +26,23 @@ you can't set the `innerText` with this module.
 
 ```js
 var innerText = require('inner-text');
+
+// get the dom element with plain javascript
 var el = document.querySelector('body');
-el.innerHTML = 'hello<br/>welt'
+// or with jquery:
+el = $('body')[0];
+
+// set the innerHTML (only for this example)
+el.innerHTML = 'hello<br/>world';
 
 var text = innerText(el)
+assert.equal(text, 'hello\nworld');
 
-/* text ->
-"hello
+```
 
-welt"
-/*
+# test
+```sh
+npm test
 ```
 
 # license
